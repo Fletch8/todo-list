@@ -5,11 +5,15 @@ import ListItem from './ListItem'
 
 class MyList extends Component {
   render() {
+    let todoItems = todoItems.map((item, index) => (
+      <ListItem doThis={item} key={'todo' + index} />
+    ))
+
     return (
       <div>
         <h1> Things I should stop procrastinating:</h1>
         <ul>
-          <ListItem />
+          { todoItems }
         </ul>
       </div>
     )

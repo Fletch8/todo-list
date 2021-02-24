@@ -4,8 +4,10 @@ import './index.css';
 import MyList from './MyList';
 import reportWebVitals from './reportWebVitals';
 
+var toDos = ["Buy ice cream", "Eat ice cream", "Go to the gym"]
+
 ReactDOM.render(
-  <MyList />,
+  <MyList thelist={toDos} />,
   document.getElementById('root')
 )
 

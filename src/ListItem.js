@@ -1,9 +1,14 @@
-import React from 'react'
+import React, { Component } from 'react';
+import './App.css';
 
-function ListItem(props) {
+class ListItem extends Component {
+  render() {
     return (
-        <li>Make the list!</li>
+      <div>
+        <li>{this.props.doThis}</li>
+      </div>
     )
+  }
 }
 
-export default ListItem;
+export default ListItem
