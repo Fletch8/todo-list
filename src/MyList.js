@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import './App.css'
 import ListItem from './ListItem'
-import MyList from './ListItem'
+
 
 class MyList extends Component {
   render() {
